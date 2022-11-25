@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TestApp.iml" filepath="$PROJECT_DIR$/TestApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TestApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TestApp.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TestApp.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TestApp.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TestApp.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TestApp.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TestApp.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TestApp.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home/TestApp.home.iml" filepath="$PROJECT_DIR$/.idea/modules/home/TestApp.home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home/TestApp.home.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/home/TestApp.home.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home/TestApp.home.main.iml" filepath="$PROJECT_DIR$/.idea/modules/home/TestApp.home.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home/TestApp.home.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/home/TestApp.home.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mycompilelib/TestApp.mycompilelib.iml" filepath="$PROJECT_DIR$/.idea/modules/mycompilelib/TestApp.mycompilelib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mycompilelib/TestApp.mycompilelib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mycompilelib/TestApp.mycompilelib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mycompilelib/TestApp.mycompilelib.test.iml" filepath="$PROJECT_DIR$/.idea/modules/mycompilelib/TestApp.mycompilelib.test.iml" />
+    </modules>
+  </component>
+</project>

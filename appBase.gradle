@@ -1,0 +1,28 @@
+//Groovy语法
+//扩展
+ext {
+    //区分是否是测试环境，还是正式环境
+    isRelease = false
+    url = [
+            "debug"  : "http://www.debug.com",
+            "release": "http://www.release.com"
+    ]
+
+    //统一的环境配置
+    androidID = [
+            compileSdkVersion: 31,
+            buildToolsVersion: "28.0.3",
+            minSdkVersion    : 19,
+            targetSdkVersion : 28,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+    appID = [
+            app : "lm.com.testapp",
+            home: "com.fe.home"
+    ]
+
+    dependenciesID = [
+
+    ]
+}

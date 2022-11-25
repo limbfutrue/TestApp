@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="lm.com.testapp.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"/>
+    <RadioGroup
+        android:id="@+id/rg_home_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_white">
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:drawableTop="@drawable/home_icon"
+            android:drawableTint="@color/bottom_navigation_home_select"
+            style="@style/home_bottom_tab_style"
+            android:checked="true"
+            android:text="@string/navigation_home_btn"/>
+        <RadioButton
+            android:id="@+id/rb_my"
+            android:drawableTop="@drawable/my_icon"
+            android:drawableTint="@color/bottom_navigation_my_select"
+            style="@style/home_bottom_tab_style"
+            android:text="@string/navigation_my_btn"/>
+    </RadioGroup>
+</RelativeLayout>

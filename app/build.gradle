@@ -1,0 +1,70 @@
+plugins {
+    id 'com.android.application'
+}
+
+def androidID = rootProject.ext.androidID;
+android {
+    signingConfigs {
+        config {
+            keyAlias 'myapp'
+            keyPassword '123456'
+            storeFile file('D:/myapp.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion androidID.compileSdkVersion
+    buildToolsVersion androidID.buildToolsVersion
+    defaultConfig {
+        applicationId appID.app
+        minSdkVersion androidID.minSdkVersion
+        targetSdkVersion androidID.targetSdkVersion
+        versionCode androidID.versionCode
+        versionName androidID.versionName
+//        ndk {
+//            abiFilters 'armeabi'
+//        }
+    }
+    buildTypes {
+        debug {
+            buildConfigField("String", "debug", "\"${url.debug}\"")
+        }
+        release {
+            buildConfigField("String", "release", "\"${url.release}\"")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+    sourceSets {
+        main() {
+            jniLibs.srcDirs = ['src/main/libs']
+            jni.srcDirs = []
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+//依赖aar包时必须配置
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/tbs_sdk_v4.3.0.67_43967.jar')
+    implementation(name: 'pdf-viewer-2.8.2', ext: 'aar')
+    implementation(name: 'pdfium-android-1.7.1', ext: 'aar')
+    implementation(name: 'sqlcipher-4.4.2', ext: 'aar')
+    implementation(name: 'alipaySdk-15.6.4-20190624155522', ext: 'aar')
+    //    compile files('libs/alipay-sdk-java-3.7.26.ALL.jar')
+    if (isRelease) {
+        compile project(':home')
+    }
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+}

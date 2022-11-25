@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FlowLayout">
+        <attr name="verSpacing" format="dimension"></attr>
+        <attr name="horSpacing" format="dimension"></attr>
+        <attr name="maxLine" format="integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustTestView">
+        <attr name="fondSize" format="dimension"></attr>
+        <attr name="text" format="string"></attr>
+    </declare-styleable>
+
+    <!-- SlideTabView -->
+    <declare-styleable name="SlideTabView">
+        <attr name="tabTextSize" format="integer"/>
+        <attr name="offLineColor" format="color"/>
+        <attr name="splitLineColor" format="color"/>
+        <attr name="noCurrColor" format="color"/>
+        <attr name="currColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="PullLoadMoreView">
+        <attr name="top_background_color" format="color" />
+    </declare-styleable>
+</resources>

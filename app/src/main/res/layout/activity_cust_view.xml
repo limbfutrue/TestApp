@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="lm.com.testapp.act.CustViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <LinearLayout
+            android:id="@+id/ll_ip_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <EditText
+                android:id="@+id/et_ip"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#10999999"
+                android:hint="请输入ip地址"
+                android:paddingLeft="15dp"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_marginTop="30dp"/>
+            <Button
+                android:id="@+id/bt_update_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改"
+                android:textColor="#666666"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_select_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选择文件"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/tv_show_file_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:layout_margin="15dp"
+        android:text="上传进度"/>
+    <ProgressBar
+        android:id="@+id/p_progress"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_margin="15dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="0"
+        />
+    <Button
+        android:id="@+id/bt_send"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="上传文件"
+        android:layout_margin="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="温馨提示：上传文件前，请先连接邮储内网"
+        android:textSize="16sp"
+        android:textColor="#999999"
+        android:paddingLeft="20dp"
+        />
+</LinearLayout>
